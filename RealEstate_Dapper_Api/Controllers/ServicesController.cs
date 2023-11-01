@@ -15,6 +15,8 @@ namespace RealEstate_Dapper_Api.Controllers
         {
             _serviceRepository = serviceRepository;
         }
+
+
         [HttpGet]
         public async Task<IActionResult> GetServiceList()
         {
