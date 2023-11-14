@@ -28,18 +28,17 @@
                         <tbody>
                             @foreach (var item in Model)
                             {
-
                                 <tr>
-                                    <th scope="row">@item.productId</th>
-                                    <td>@item.title</td>
-                                    <td>@item.city</td>
-                                    <td>@item.district</td>
-                                    <td>@item.categoryName</td>
-                                    <td>@item.price</td>
-                                    <td>@item.type</td>
-                                    <td><a href="/Product/DeleteProduct/@item.productId" class="btn btn-outline-danger">Sil</a></td>
-                                    <td><a href="/Product/UpdateProduct/@item.productId" class="btn btn-outline-success">Güncelle</a></td>
-                                    <td><a href="/Product/ProductDetail/@item.productId" class="btn btn-outline-primary">Sitede Gör</a></td>
+                                    <th scope="row">@item.ProductId</th>
+                                    <td>@item.Title</td>
+                                    <td>@item.City</td>
+                                    <td>@item.District</td>
+                                    <td>@item.CategoryName</td>
+                                    <td>@item.Price</td>
+                                    <td>@item.Type</td>
+                                    <td><a href="/Product/DeleteProduct/@item.ProductId" class="btn btn-outline-danger">Sil</a></td>
+                                    <td><a href="/Product/UpdateProduct/@item.ProductId" class="btn btn-outline-success">Güncelle</a></td>
+                                    <td><a href="/Product/ProductDetail/@item.ProductId" class="btn btn-outline-primary">Sitede Gör</a></td>
                                 </tr>
                             }
                         </tbody>
